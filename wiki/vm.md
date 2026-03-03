@@ -42,7 +42,7 @@ The name you chose when [creating the VM](#create-a-vm-using-the-subscription) (
 
 ## `<your-vm-ip-address>`
 
-The [IP address](./computer-networks.md#ip-address) of [your VM](#your-vm) (without `<` and `>`).
+The [IP address](./computer-networks.md#ip-address) (without `<` and `>`) of [your VM](#your-vm) in the `UniversityStudent` [network](./computer-networks.md#what-is-a-network).
 
 Example: `10.93.24.1`.
 
