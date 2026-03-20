@@ -50,6 +50,10 @@ def main() -> None:
     base_url: str = args.base_url
     if args.port is not None:
         base_url = f"http://localhost:{args.port}/v1"
+    if not base_url.startswith(("http://", "https://")):
+        base_url = f"http://{base_url}"
+    if not base_url.endswith("/v1"):
+        base_url = f"{base_url}/v1"
 
     api_key: str = args.api_key
     if not api_key:
@@ -59,10 +63,12 @@ def main() -> None:
     prompt = " ".join(args.prompt)
     url = f"{base_url.rstrip('/')}/chat/completions"
 
-    payload = json.dumps({
-        "model": args.model,
-        "messages": [{"role": "user", "content": prompt}],
-    }).encode()
+    payload = json.dumps(
+        {
+            "model": args.model,
+            "messages": [{"role": "user", "content": prompt}],
+        }
+    ).encode()
 
     req = urllib.request.Request(
         url,

@@ -83,14 +83,9 @@ envfile = "backend/.env.tests.e2e.secret"
 # Query Qwen Code API
 
 [tool.poe.tasks.query-qwen-code-api]
-help = "Query the Qwen Code API: poe query-qwen <prompt>"
-cmd = "python scripts/query-qwen-code-api.py ${prompt}"
+help = "Query the Qwen Code API: poe query-qwen-code-api [OPTIONS] <prompt>"
+cmd = "python scripts/query-qwen-code-api.py"
 envfile = ".env.bot.secret"
-[[tool.poe.tasks.query-qwen-code-api.args]]
-name = "prompt"
-positional = true
-required = true
-multiple = true
 
 [tool.pyright]
 include = ["backend"]
