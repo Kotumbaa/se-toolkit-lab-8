@@ -85,7 +85,9 @@ Replace the placeholders:
 - [`<your-github-username>`](./github.md#your-github-username-placeholder)
 
 > [!WARNING]
-> By default, `GitHub` sets the base repository to the upstream (`inno-se-toolkit`). You must **change the base repository to your own fork** (`<your-github-username>/<lab-repo-name>`) before creating the PR. Do **not** create PRs to the upstream repo.
+> By default, `GitHub` sets the base repository to the upstream (`inno-se-toolkit`).
+>
+> You must **change the base repository to your own fork** (`<your-github-username>/<lab-repo-name>`) before creating the PR. Do **not** create PRs to the upstream repo.
 
 ## Get a PR review
 
