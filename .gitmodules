@@ -1,9 +1,9 @@
 [submodule "instructors/meetings"]
 	path = instructors/meetings
 	url = https://github.com/inno-se-toolkit/meetings
-[submodule "qwen-code-api"]
-	path = qwen-code-api
-	url = https://github.com/inno-se-toolkit/qwen-code-api
 [submodule "nanobot/packages/nanobot-ai"]
 	path = nanobot/packages/nanobot-ai
 	url = https://github.com/inno-se-toolkit/nanobot.git
+[submodule "qwen-code-api"]
+	path = qwen-code-api
+	url = https://github.com/inno-se-toolkit/qwen-code-api-py
